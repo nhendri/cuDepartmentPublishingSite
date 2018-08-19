@@ -1,0 +1,13 @@
+#directories
+node_modules
+dist
+config\\private
+
+#extensions
+.log
+.map
+
+#files
+.env
+test.js
+readme.html

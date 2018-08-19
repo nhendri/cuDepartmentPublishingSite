@@ -1,0 +1,28 @@
+{
+    "customActions": [
+        {
+            "customAction": "cuInjectCustomizations",
+            "libraryURL": "Style%20Library/cuSiteResources",
+            "libraryFolder": "Style Library/cuSiteResources"
+        }
+    ],
+    "customClass": [
+        {
+            "customClass": "cuDeptPublishingSiteLandingPg",
+            "libraryURL": "Style%20Library/cuSiteResources",
+            "libraryFolder": "Style Library/cuSiteResources",
+            "librariesFrameworks": [
+                "polyfill.min.js",
+                "fabric.min.css"
+            ]
+        },
+        {
+            "customClass": "cuDeptPublishingSiteHelpPg",
+            "libraryURL": "Style%20Library/cuSiteResources",
+            "libraryFolder": "Style Library/cuSiteResources",
+            "librariesFrameworks": [
+                "fabric.min.css"
+            ]
+        }
+    ]
+}

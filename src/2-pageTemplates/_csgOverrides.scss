@@ -1,0 +1,33 @@
+#s4-titlerow {
+    margin-left: 220px;
+}
+
+#DeltaPlaceHolderPageTitleInTitleArea {
+    display: none !important;
+}
+
+#breadcrumbSite {
+    display: none;
+}
+
+#contentRow {
+    max-width: 100% !important;
+    width: auto !important;
+}
+
+#sideNavBox {
+    visibility: hidden;
+}
+
+.custom-webpart-border {
+    border: none !important;
+}
+
+/* #DeltaTopNavigation {
+    li.selected {
+        .menu-item-text {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+} */

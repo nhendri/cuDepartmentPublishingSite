@@ -1,0 +1,31 @@
+{
+  "name": "cu-dept-publishing-site",
+  "version": "1.0.0",
+  "description": "This is the static files project for the department publishing site template. We are building js custom actions, stylesheets, and any page-specific js required to brand and layout an instance of the site.",
+  "scripts": {
+    "clean": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command rm -recurse -force dist/*",
+    "sass": "node-sass src -o dist --output-style compressed",
+    "babel": "npx babel src --out-dir dist --presets=env --minified --no-comments",
+    "watch": "concurrently --kill-others \"node-sass src -o dist --output-style compressed -w\" \"npx babel src --out-dir dist --presets=env --minified --no-comments -w\"",
+    "prebuild": "npm run clean",
+    "build": "npm run sass && npm run babel",
+    "preupload": "npm run build",
+    "upload": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command .\\config\\uploadDist.ps1"
+  },
+  "keywords": [
+    "branding",
+    "layout",
+    "sharepoint",
+    "publishing"
+  ],
+  "author": "Nick Hendricks",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "concurrently": "^3.5.1",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.8.3"
+  }
+}

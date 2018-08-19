@@ -1,0 +1,61 @@
+@import 'colors';
+@import 'IconGrid'; //partial for Icons
+@import 'csgOverrides';
+$zoneBorder: 2px solid $secuRBlue;
+$accentBorder: 5px solid $secuRBlue;
+@media screen and (min-width: 1600px) {
+    .cuDeptPublishingSiteLandingPg {
+        padding-right: 15%; //give some padding to right side of entire content body
+    }
+}
+
+@media screen and (min-width: 1365px) {
+    .cuQuickLinksContent {
+        border-left: $accentBorder;
+    }
+    .cuPromotedLinksWebParts {
+        border-left: $accentBorder;
+        margin-top: 10%;
+        ul {
+            padding-left: 5%;
+        }
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .cuContentRowTop {
+        border-bottom: $zoneBorder;
+    }
+    .cuContentRowMain {
+        padding-top: 5%;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    #DeltaPlaceHolderSearchArea {
+        display: none; //hide page search bar until we are at smallest breakpoint
+    }
+}
+
+//all sizes
+.cuContentRowTop {
+    table {
+        table {
+            thead {
+                display: none; //remove row header for announcement body
+            }
+        }
+    }
+}
+
+.ms-srch-group-content {
+    //set search results to fill its entire container
+    padding-right: 10% !important;
+    .ms-srch-item {
+        width: 100% !important;
+    }
+}
+
+#OtherValue {
+    display: none; //hide the 'other value' option for any multi-value refiners
+}

@@ -1,0 +1,32 @@
+@mixin hoverShadowPre($duration, $animation) {
+    -webkit-transition: box-shadow $duration $animation;
+    -moz-transition: box-shadow $duration $animation;
+    -o-transition: box-shadow $duration $animation;
+    transition: box-shadow $duration $animation;
+}
+
+@mixin hoverShadowPost($weight, $direction) {
+    $color: rgba(0, 0, 0, 0.75);
+    @if $weight=='light' {
+        $x: 2;
+        $y: 1;
+        $br: 1;
+    }
+    @else if $weight=='large' {
+        $x: 10;
+        $y: 5;
+        $br: 3;
+    }
+    @else {
+        $x: 5;
+        $y: 3;
+        $br: 2;
+    }
+    @if $direction=='left' {
+        $x: -$x;
+    }
+    box-shadow: #{$x}px,
+    #{$y}px,
+    #{$br}px,
+    $color;
+}
