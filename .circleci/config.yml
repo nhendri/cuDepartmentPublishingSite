@@ -6,13 +6,11 @@ executors:
       
 jobs:
   build-my-project:
-
     executor: my-custom-executor
     steps:
       - checkout
       - run: |
-          npm install
-          npm build
+          echo "Pretend Install"
 
 workflows:
   my-custom-workflow:
