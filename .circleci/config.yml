@@ -2,7 +2,7 @@ version: 2.1
 executors:
   my-custom-executor:
     docker:
-      - image: cimg/node:lts
+      - image: node:lts
       
 jobs:
   build-my-project:
